@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.countdown-box {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5); /* Background gelap transparan */
+  color: rgb(255, 255, 255, 0.8); /* Warna angka putih dengan sedikit transparansi */
+  font-size: 12rem; /* Ukuran angka besar */
+  font-weight: bold;
+  padding: 20px 30px;
+  border-radius: 50px; /* Membuat kotak berbentuk bulat */
+  width: 300px; /* Ukuran kotak */
+  height: 300px; /* Ukuran kotak */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2); /* Bayangan kotak untuk efek kedalaman */
+  position: relative; /* Agar label bisa diposisikan di bawah angka */
+  text-align: center;
+}
+
+.countdown-10 {
+  display: inline-block;
+  color: rgb(255, 255, 255, 0.8); /* Warna angka putih dengan sedikit transparansi */
+  font-size: 28rem; /* Ukuran angka besar */
+  font-weight: bold;
+  padding: 20px 30px;
+  border-radius: 50px; /* Membuat kotak berbentuk bulat */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Agar label bisa diposisikan di bawah angka */
+  text-align: center;
+}
+
+.nyetext {
+  display: inline-block;
+  color: rgb(255, 255, 255, 0.8); /* Warna angka putih dengan sedikit transparansi */
+  font-size: 12rem; /* Ukuran angka besar */
+  font-weight: bold;
+  padding: 20px 30px;
+  border-radius: 50px; /* Membuat kotak berbentuk bulat */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Agar label bisa diposisikan di bawah angka */
+  text-align: center;
+}
+
+.countdown-box .label {
+  position: absolute;
+  bottom: 10px; 
+  font-size: 1.5rem; /* Ukuran font kecil untuk label */
+  color: rgb(255, 255, 255, 0.8); /* Warna teks kecil */
+  text-transform: uppercase; /* Membuat label menggunakan huruf kapital */
+}
